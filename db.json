@@ -1,0 +1,284 @@
+{
+  "ozzy_ozborne": [
+      {
+        "name": "name",
+        "defVal": "Ozzy Ozborne"
+      },
+      {   "id": 11,
+          "type": "select",
+          "name": "birdthday",
+          "itemsOnStr": "1",
+          "title": "Birdthday",
+          "placeholder": "Select year",
+          "defVal": "",
+          "values": [ 
+              {"name": "2019", "id": "91"}, 
+              {"name": "1948", "id": "92"}, 
+              {"name": "1894", "id": "93"}, 
+              {"name": "1947", "id": "94"} 
+            ]
+      }, 
+      {
+          "id": 12,
+          "type": "select",
+          "name": "nativeCity",
+          "itemsOnStr": "1",
+          "title": "Native city",
+          "placeholder": "Select city",
+          "defVal": "",
+          "values": [ 
+            {"name": "Poltava", "id": "01"},
+            {"name": "Stalingrad", "id": "02"}, 
+            {"name": "Birmingham", "id": "03"}, 
+            {"name": "Seul", "id": "04"} 
+            ]
+      }, 
+      {
+          "id": 13,
+          "type": "text",
+          "name": "bandName",
+          "itemsOnStr": "1",
+          "title": "Band name",
+          "defVal": "",
+          "values": ""
+      },
+      { 
+          "id": 14,
+          "type": "radio",
+          "name": "specialisation",
+          "itemsOnStr": "1",
+          "title": "Specialisation in band",
+          "defVal": "",
+          "values": [ "vocal", "guitar solo", "guitar rythm", "bass", "drums"]
+      },
+      {
+          "id": 15,
+          "type": "checkbox",
+          "name": "substances",
+          "itemsOnStr": "1",
+          "title": "Using substances",
+          "defVal": [],
+          "values": [ "cocaine", "womans", "alcohol", "canabis", "mescaline", "all these bad things"]
+      }
+
+  ],
+  "ozzy_ozborne_ansvers": [
+    {"name": "birdthday", "ansver": "1948", "title": "birdthday"},
+    {"name": "nativeCity", "ansver": "Birmingham", "title": "Native city"},
+    {"name": "bandName", "ansver": "black sabbath", "title": "Band name"},
+    {"name": "specialisation", "ansver": "vocal", "title": "Specialisation in band"},
+    {"name": "substances", "ansver": ["all these bad things"], "title": "Using substances"}
+  ],
+
+  "diamond_darrell": [
+      {
+        "name": "name",
+        "defVal": "Diamond Darrell"},
+      {
+          "id": 21,
+          "type": "text",
+          "name": "realName",
+          "itemsOnStr": "1",
+          "title": "Real name",
+          "defVal": "",
+          "values": ""
+      },
+      {
+          "id": 22,
+          "type": "select",
+          "name": "birdthday",
+          "itemsOnStr": "2",
+          "title": "Birdthday",
+          "placeholder": "Select year",
+          "defVal": "",
+          "values": [ 
+            {"name": "2019", "id": "011"}, 
+            {"name": "1966", "id": "012"}, 
+            {"name": "1894", "id": "013"}, 
+            {"name": "1947", "id": "014"}
+            ]
+      }, 
+      {
+          "id": 23,
+          "type": "select",
+          "name": "nativeCity",
+          "itemsOnStr": "2",
+          "title": "Native city",
+          "placeholder": "Select city",
+          "defVal": "",
+          "values": [ 
+            {"name": "Poltava", "id": "021"},
+            {"name": "Stalingrad", "id": "022"}, 
+            {"name": "Arlington", "id": "023"}, 
+            {"name": "Seul", "id": "024"} 
+            ]
+      }, 
+      { 
+          "id": 24,
+          "type": "radio",
+          "name": "specialisation",
+          "itemsOnStr": "1",
+          "title": "Specialisation in band",
+          "defVal": "",
+          "values": [ "vocal", "guitar solo", "guitar rythm", "bass", "drums"]
+      },
+      {
+          "id": 25,
+          "type": "checkbox",
+          "name": "substances",
+          "itemsOnStr": "1",
+          "title": "Using substances",
+          "defVal": [],
+          "values": [ "cocaine", "womans", "alcohol", "canabis", "mescaline", "all these bad things"]
+      }  
+  ],
+  "diamond_darrell_ansvers": [
+    {"name": "realName", "ansver": "darrell lance abbott", "title": "Real name"},
+    {"name": "birdthday", "ansver": "1966", "title": "Birdthday"},
+    {"name": "nativeCity", "ansver": "Arlington", "title": "Native city"},
+    {"name": "specialisation", "ansver": "guitar solo", "title": "Specialisation in band"},
+    {"name": "substances", "ansver": ["all these bad things"], "title": "Using substances"}
+],
+
+  "bruce_dickinson": [
+      {
+        "name": "name",
+        "defVal": "Bruce Dickinson"},
+      {
+          "id": 31,
+          "type": "text",
+          "name": "bandName",
+          "itemsOnStr": "1",
+          "title": "Band name",
+          "defVal": "",
+          "values": ""
+      },
+      {
+          "id": 32,
+          "type": "select",
+          "name": "birdthday",
+          "itemsOnStr": "2",
+          "title": "Birdthday",
+          "placeholder": "Select year",
+          "defVal": "",
+          "values": [ 
+            {"name": "2019", "id": "061"}, 
+            {"name": "1966", "id": "062"}, 
+            {"name": "1958", "id": "063"}, 
+            {"name": "1947", "id": "064"}
+            ]
+      }, 
+      {
+          "id": 33,
+          "type": "select",
+          "name": "nativeCity",
+          "itemsOnStr": "2",
+          "title": "Native city",
+          "placeholder": "Select city",
+          "defVal": "",
+          "values": [ 
+            {"name": "Poltava", "id": "031"},
+            {"name": "Stalingrad", "id": "032"}, 
+            {"name": "Worksop", "id": "033"}, 
+            {"name": "Seul", "id": "034"} 
+            ]
+      }, 
+      { 
+          "id": 34,
+          "type": "radio",
+          "name": "specialisation",
+          "itemsOnStr": "1",
+          "title": "Specialisation in band",
+          "defVal": "",
+          "values": [ "vocal", "guitar solo", "guitar rythm", "bass", "drums"]
+      },
+      {
+          "id": 35,
+          "type": "checkbox",
+          "name": "substances",
+          "itemsOnStr": "1",
+          "title": "Using substances",
+          "defVal": [],
+          "values": [ "cocaine", "womans", "alcohol", "canabis", "mescaline", "all these bad things"]
+      }  
+  ],
+  "bruce_dickinson_ansvers": [
+    {"name": "bandName", "ansver": "iron maiden", "title": "Band name"},
+    {"name": "birdthday", "ansver": "1958", "title": "Birdthday"},
+    {"name": "nativeCity", "ansver": "Worksop", "title": "Native city"},
+    {"name": "specialisation", "ansver": "vocal", "title": "Specialisation in band"},
+    {"name": "substances", "ansver": ["all these bad things"], "title": "Using substances"}
+],
+
+  "pavlo_zibrov": [
+      {
+          "name": "name",
+          "defVal": "Pavlo Zibrov"
+      },
+      {
+          "id": 41,
+          "type": "text",
+          "name": "realName",
+          "itemsOnStr": "1",
+          "title": "Real name",
+          "defVal": "",
+          "values": ""
+      },
+      {
+          "id": 42,
+          "type": "select",
+          "name": "birdthday",
+          "itemsOnStr": "2",
+          "title": "Birdthday",
+          "placeholder": "Select year",
+          "defVal": "",
+          "values": [ 
+            {"name": "2019", "id": "041"}, 
+            {"name": "1957", "id": "042"}, 
+            {"name": "1938", "id": "043"}, 
+            {"name": "1947", "id": "044"}
+            ]
+      }, 
+      {
+          "id": 43,
+          "type": "select",
+          "name": "nativeCity",
+          "itemsOnStr": "2",
+          "title": "Native city",
+          "placeholder": "Select city",
+          "defVal": "",
+          "values": [ 
+            {"name": "Poltava", "id": "051"},
+            {"name": "Stalingrad", "id": "052"}, 
+            {"name": "Chernovoie", "id": "053"}, 
+            {"name": "Seul", "id": "054"} 
+            ]
+      }, 
+      { 
+          "id": 44,
+          "type": "radio",
+          "name": "specialisation",
+          "itemsOnStr": "1",
+          "title": "Specialisation in band",
+          "defVal": "",
+          "values": [ "mustache + vocal", "guitar solo", "guitar rythm", "bass", "drums", "composer"]
+      },
+      {
+          "id": 45,
+          "type": "checkbox",
+          "name": "substances",
+          "itemsOnStr": "1",
+          "title": "Using substances",
+          "defVal": [],
+          "values": [ "cocaine", "womans", "moldavia bouquet", "canabis", "mescaline", "all these bad things"]
+      }  
+  ],
+  "pavlo_zibrov_ansvers": [
+    {"name": "realName", "ansver": "pavlo zibrov", "title": "Real name"},
+    {"name": "birdthday", "ansver": "1938", "title": "Birdthday"},
+    {"name": "nativeCity", "ansver": "Chernovoie", "title": "Native city"},
+    {"name": "specialisation", "ansver": "mustache + vocal", "title": "Specialisation in band"},
+    {"name": "substances", "ansver": ["moldavia bouquet", "womans"], "title": "Using substances"}
+]
+}
+
