@@ -384,4 +384,8 @@ h2 {
   .form-check, .form-radio {
     min-width: 50%;
   }
+
+  .input_group, .checkbox_cont {
+    flex-direction: column;
+  }
 }

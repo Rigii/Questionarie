@@ -58,7 +58,7 @@
           "itemsOnStr": "1",
           "title": "Using substances",
           "defVal": [],
-          "values": [ "cocaine", "womans", "alcohol", "canabis", "mescaline", "all these bad things"]
+          "values": [ "cocaine", "womans", "alcohol", "motocycles", "fly-agaric", "all these bad things"]
       }
 
   ],
@@ -129,7 +129,7 @@
           "itemsOnStr": "1",
           "title": "Using substances",
           "defVal": [],
-          "values": [ "cocaine", "womans", "alcohol", "canabis", "mescaline", "all these bad things"]
+          "values": [ "cocaine", "womans", "alcohol", "motocycles", "fly-agaric", "all these bad things"]
       }  
   ],
   "diamond_darrell_ansvers": [
@@ -199,7 +199,7 @@
           "itemsOnStr": "1",
           "title": "Using substances",
           "defVal": [],
-          "values": [ "cocaine", "womans", "alcohol", "canabis", "mescaline", "all these bad things"]
+          "values": [ "cocaine", "womans", "alcohol", "motocycles", "fly-agaric", "all these bad things"]
       }  
   ],
   "bruce_dickinson_ansvers": [
@@ -270,7 +270,7 @@
           "itemsOnStr": "1",
           "title": "Using substances",
           "defVal": [],
-          "values": [ "cocaine", "womans", "moldavia bouquet", "canabis", "mescaline", "all these bad things"]
+          "values": [ "cocaine", "womans", "moldavia bouquet", "motocycles", "fly-agaric", "all these bad things"]
       }  
   ],
   "pavlo_zibrov_ansvers": [
