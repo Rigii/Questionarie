@@ -16,7 +16,7 @@ class Select extends Component {
     this.setBlur = this.setBlur.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     let placeholder = this.props.defOptName ? this.props.defOptName : this.props.data[0].name;
     if (this.props.isEdit && this.props.isEdit !== true) {
       this.setState({ selectedName: placeholder });
