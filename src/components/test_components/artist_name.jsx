@@ -10,7 +10,7 @@ function ArtistNameSelect(props) {
     }
 
     return (
-        <div id='artistName' className='artist_name input_group'>
+        <div id='artistName' className='artist_name input_group checkbox_cont'>
             <div className="form-radio-head">
                 <label className="container_radio">Ozzy Ozborne
                     <input

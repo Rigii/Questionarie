@@ -109,7 +109,7 @@ export function getInitialData(url) {
     dispatch(requInitData());
     singleFetchRequest(url).then((obj) => {
       let stateObj = {};
-      obj.map((i) => { stateObj[i.name] = i.defVal })
+      obj.map((i) => { return stateObj[i.name] = i.defVal })
       dispatch(getData(obj, stateObj));
     })
     .catch(reject => {

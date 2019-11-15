@@ -385,7 +385,13 @@ h2 {
     min-width: 50%;
   }
 
-  .input_group, .checkbox_cont {
+  .checkbox_cont {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .form-check {
+    min-width: 50%;
   }
 }

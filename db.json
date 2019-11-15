@@ -58,7 +58,7 @@
           "itemsOnStr": "1",
           "title": "Using substances",
           "defVal": [],
-          "values": [ "cocaine", "womans", "alcohol", "motocycles", "fly-agaric", "all these bad things"]
+          "values": [ "cocaine", "womans", "alcohol", "motocycles", "fly-agaric", "all these good/bad things"]
       }
 
   ],
@@ -67,7 +67,7 @@
     {"name": "nativeCity", "ansver": "Birmingham", "title": "Native city"},
     {"name": "bandName", "ansver": "black sabbath", "title": "Band name"},
     {"name": "specialisation", "ansver": "vocal", "title": "Specialisation in band"},
-    {"name": "substances", "ansver": ["all these bad things"], "title": "Using substances"}
+    {"name": "substances", "ansver": ["all these good/bad things"], "title": "Using substances"}
   ],
 
   "diamond_darrell": [
@@ -129,7 +129,7 @@
           "itemsOnStr": "1",
           "title": "Using substances",
           "defVal": [],
-          "values": [ "cocaine", "womans", "alcohol", "motocycles", "fly-agaric", "all these bad things"]
+          "values": [ "cocaine", "womans", "alcohol", "motocycles", "fly-agaric", "all these good/bad things"]
       }  
   ],
   "diamond_darrell_ansvers": [
@@ -137,7 +137,7 @@
     {"name": "birdthday", "ansver": "1966", "title": "Birdthday"},
     {"name": "nativeCity", "ansver": "Arlington", "title": "Native city"},
     {"name": "specialisation", "ansver": "guitar solo", "title": "Specialisation in band"},
-    {"name": "substances", "ansver": ["all these bad things"], "title": "Using substances"}
+    {"name": "substances", "ansver": ["all these good/bad things"], "title": "Using substances"}
 ],
 
   "bruce_dickinson": [
@@ -199,7 +199,7 @@
           "itemsOnStr": "1",
           "title": "Using substances",
           "defVal": [],
-          "values": [ "cocaine", "womans", "alcohol", "motocycles", "fly-agaric", "all these bad things"]
+          "values": [ "cocaine", "womans", "alcohol", "motocycles", "fly-agaric", "all these good/bad things"]
       }  
   ],
   "bruce_dickinson_ansvers": [
@@ -270,7 +270,7 @@
           "itemsOnStr": "1",
           "title": "Using substances",
           "defVal": [],
-          "values": [ "cocaine", "womans", "moldavia bouquet", "motocycles", "fly-agaric", "all these bad things"]
+          "values": [ "cocaine", "womans", "moldavia bouquet", "motocycles", "fly-agaric", "all these good/bad things"]
       }  
   ],
   "pavlo_zibrov_ansvers": [

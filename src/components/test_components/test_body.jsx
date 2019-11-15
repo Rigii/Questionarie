@@ -9,7 +9,7 @@ function TestComponent(props) {
 
   return (
     <div id='testBody' className='test_body'>
-      {props.formState.renderData.map((i, n) => {
+      {props.formState.renderData.map((i) => {
 
         if (i.type === "text") {
           return <TextComp
