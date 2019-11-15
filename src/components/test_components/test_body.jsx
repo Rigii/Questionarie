@@ -10,7 +10,6 @@ function TestComponent(props) {
   return (
     <div id='testBody' className='test_body'>
       {props.formState.renderData.map((i) => {
-
         if (i.type === "text") {
           return <TextComp
             key={i.id}
@@ -50,7 +49,7 @@ function TestComponent(props) {
                   isClear={props.formState.isClear}
                   unfilledFelds={props.formState.unfilledFelds}
                 />
-              }
+              } return null
       })}
     </div>
   );

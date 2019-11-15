@@ -304,7 +304,7 @@ Customize the label (the container) */
   width: 100%;
   height: -webkit-fill-available;
   height: -moz-available;
-  height: fill-available;
+  height: stretch;
   align-content: center;
 }
 

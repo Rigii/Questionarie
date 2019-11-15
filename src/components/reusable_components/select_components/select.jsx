@@ -22,13 +22,14 @@ class Select extends Component {
       this.setState({ selectedName: placeholder });
     } else {
       if (this.props.value !== '') {
-        this.props.data.map((i) => {
-          Object.keys(i).map((n) => {
+        this.props.data.forEach((i) => {
+           Object.keys(i).forEach((n) => {
             let propsValue = isNaN(+this.props.value) ? this.props.value : +this.props.value;
             if (+i[n] === propsValue || i[n] === propsValue) {
               let value = i.name !== undefined ? i.name : i.title;
               this.setState({ selectedName: value });
             };
+            return null
           });
         });
       } else { this.setState({ selectedName: placeholder }); }
@@ -84,9 +85,9 @@ class Select extends Component {
     if (val) {
       let defName = this.props.defOptName;
       let names = [];
-      val.map((vi) => {
-        data.map((di) => {
-          if (di.id == vi) {
+      val.forEach((vi) => {
+        data.forEach((di) => {
+          if (di.id === vi) {
             names.push(di.name);
           }
         });
@@ -107,7 +108,7 @@ class Select extends Component {
       value = i[this.props.valueDefNameInObj];
       if (name !== this.props.defOptName) {
         if (multi) {
-          return <a className="dropdown-item multi_check" key={key}>
+          return <button className="dropdown-item multi_check" key={key}>
             <div className="col-4 custom-control custom-control-lg form-check">
               <label className="form-flag" htmlFor={+i.id}>
                 <input type="checkbox"
@@ -124,7 +125,7 @@ class Select extends Component {
                   {name + postfixWord}</span>
               </label>
             </div>
-          </a>;
+          </button>;
         } else {
           return <button
             className="dropdown-item"
@@ -139,17 +140,17 @@ class Select extends Component {
     }
   }
 
-  componentWillUpdate(nextProps, nextState) {
-    if (nextState.displayDrop !== 'none') {
+  componentDidUpdate(prevProps, prevState) {
+    if (this.state.displayDrop !== 'none') {
       document.addEventListener('click', this.setBlur, false);
     } else {
       document.removeEventListener('click', this.setBlur, false);
     }
-    if (nextProps.value === '' && this.state.selectedName !== nextProps.defOptName) {
-      this.setState({ selectedName: nextProps.defOptName });
+    if (this.props.value === '' && prevState.selectedName !== this.props.defOptName) {
+      this.setState({ selectedName: this.props.defOptName });
     }
-    if (this.props.multi && nextProps.value !== this.props.value) {
-      this.setMultiSelectedList(nextProps.value, this.props.data);
+    if (prevProps.multi && this.props.value !== prevProps.value) {
+      this.setMultiSelectedList(this.props.value, prevProps.data);
     }
   }
 

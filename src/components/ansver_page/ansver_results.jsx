@@ -5,7 +5,7 @@ function AnsverResults(props) {
   let takeResults = () => {
     let resArr = [];
     let count = 0;
-    props.correctAnsvers.map((item, n) => {
+    props.correctAnsvers.forEach((item, n) => {
       let inspectedName = item.name
       let correctValue = item.ansver
       let selectedValue = props.stateData[inspectedName];
