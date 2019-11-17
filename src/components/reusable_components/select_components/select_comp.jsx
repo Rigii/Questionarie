@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import Select from './select'
 
 class SelectComp extends Component {
@@ -16,10 +17,10 @@ class SelectComp extends Component {
 
     render() {
         let { data, setFormList, itemState } = this.props;
-        let width = data.itemsOnStr > 1 ? (100/data.itemsOnStr - 0.5) + '%' : '100%'
-        
+        let width = data.itemsOnStr > 1 ? (100 / data.itemsOnStr - 0.5) + '%' : '100%'
+
         return (
-            <div id='div-select' className="div_select input_group" style={{minWidth: width}}>
+            <div id='div-select' className="div_select input_group" style={{ minWidth: width }}>
                 <span className="input-title">{data.title}</span>
                 <Select
                     data={data.values}
@@ -32,13 +33,30 @@ class SelectComp extends Component {
                     defOptName={data.placeholder}
                     //emptyValOpt={!this.props.isSale ?  this.gettext('Любой регион') : null}
                     shouldValidate={false}
-                    //multi //isMulti
-                    //maxCount={6} //for multiselect
+                //multi //isMulti
+                //maxCount={6} //for multiselect
                 />
                 {this.alertMess(data.name, itemState)}
             </div>
         );
     }
+};
+
+SelectComp.defaultProps = {
+    setFormList: () => { },
+    itemState: '',
+    data: {},
+    isClear: false,
+    unfilledFelds: []
+
+};
+
+SelectComp.propTypes = {
+    setFormList: PropTypes.func,
+    itemState: PropTypes.string,
+    data: PropTypes.object,
+    isClear: PropTypes.bool,
+    unfilledFelds: PropTypes.array
 };
 
 export default SelectComp;

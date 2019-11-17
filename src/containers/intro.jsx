@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import {
   restartStartTest
@@ -29,6 +30,14 @@ const mapDispatchToProps = dispatch => {
 return {
   restartStartTest: () => dispatch(restartStartTest())
 };
+};
+
+Intro.defaultProps = {
+  restartStartTest: () => { }
+};
+
+Intro.propTypes = {
+  restartStartTest: PropTypes.func
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Intro);

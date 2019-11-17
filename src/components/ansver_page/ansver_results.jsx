@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function AnsverResults(props) {
 
@@ -43,5 +44,15 @@ function AnsverResults(props) {
     </div>
   );
 }
+
+AnsverResults.defaultProps = {
+  correctAnsvers: [],
+  stateData: {}
+};
+
+AnsverResults.propTypes = {
+  correctAnsvers: PropTypes.array,
+  stateData: PropTypes.object
+};
 
 export default AnsverResults;

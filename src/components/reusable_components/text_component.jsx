@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 class TextComp extends Component {
 
@@ -31,6 +32,23 @@ class TextComp extends Component {
       </div>
     );
   }
+};
+
+TextComp.defaultProps = {
+  setFormList: () => { },
+  itemState: '',
+  data: {},
+  isClear: false,
+  unfilledFelds: []
+
+};
+
+TextComp.propTypes = {
+  setFormList: PropTypes.func,
+  itemState: PropTypes.string,
+  data: PropTypes.object,
+  isClear: PropTypes.bool,
+  unfilledFelds: PropTypes.array
 };
 
 export default TextComp;

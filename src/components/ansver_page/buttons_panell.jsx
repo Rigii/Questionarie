@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function ButtonsPanell(props) {
 
@@ -11,21 +12,18 @@ function ButtonsPanell(props) {
           id='try_again'
           className='button'
           onClick={props.restartStartTest}
-          name='try_again'
-        >try again</button>
-        
-        {/*<button
-          type='button'
-          id='delete'
-          className='button button--second'
-         // onClick={() => props.clearState()}
-          name='save_result'
-          style={{ position: 'inherit', float: 'left' }}
-        //disabled={!isPostActive}
-        >'save result to compeare'</button>*/}
+          name='try_again'>try again</button>
       </div>
     </div>
   );
 }
+
+ButtonsPanell.defaultProps = {
+  restartStartTest: () => {}
+};
+
+ButtonsPanell.propTypes = {
+  restartStartTest: PropTypes.func
+};
 
 export default ButtonsPanell;

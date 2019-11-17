@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function CheckComp (props) {
   let {data, i, id } = props;
@@ -19,6 +20,22 @@ function CheckComp (props) {
         </label>
       </div>
     );
+};
+
+CheckComp.defaultProps = {
+  setFormList: () => { },
+  itemState: [],
+  id: '',
+  i: '',
+  data: {}
+};
+
+CheckComp.propTypes = {
+  setFormList: PropTypes.func,
+  itemState: PropTypes.array,
+  id: PropTypes.string,
+  i: PropTypes.string,
+  data: PropTypes.object
 };
 
 export default CheckComp;

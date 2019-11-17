@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 function ButtonsPanell(props) {
   let url = `http://localhost:3000/${props.urlName}_ansvers`
@@ -27,5 +28,17 @@ function ButtonsPanell(props) {
     </div>
   );
 }
+
+ButtonsPanell.defaultProps = {
+  setFormList: () => { },
+  getInitialData: () => { },
+  formState: {}
+};
+
+ButtonsPanell.propTypes = {
+  setFormList: PropTypes.func,
+  getInitialData: PropTypes.func,
+  formState: PropTypes.object,
+};
 
 export default ButtonsPanell;

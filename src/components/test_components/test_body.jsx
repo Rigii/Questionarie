@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import TextComp from '../reusable_components/text_component'
 import SelectComp from '../reusable_components/select_components/select_comp'
 import RadioComponents from '../reusable_components/radio_components/radio_component'
@@ -54,6 +55,18 @@ function TestComponent(props) {
     </div>
   );
 }
+
+TestComponent.defaultProps = {
+  setFormList: () => { },
+  getInitialData: () => { },
+  formState: {}
+};
+
+TestComponent.propTypes = {
+  setFormList: PropTypes.func,
+  getInitialData: PropTypes.func,
+  formState: PropTypes.object,
+};
 
 export default TestComponent;
 

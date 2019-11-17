@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function ArtistNameSelect(props) {
 
@@ -66,5 +67,17 @@ function ArtistNameSelect(props) {
         </div >
     );
 }
+
+ArtistNameSelect.defaultProps = {
+    setFormList: () => { },
+    getInitialData: () => { },
+    itemState: ''
+};
+
+ArtistNameSelect.propTypes = {
+    setFormList: PropTypes.func,
+    getInitialData: PropTypes.func,
+    itemState: PropTypes.string
+};
 
 export default ArtistNameSelect;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import RadioComp from './radio_comp'
+import PropTypes from 'prop-types'
 
 class RadioComponents extends Component {
 
@@ -40,7 +41,6 @@ class RadioComponents extends Component {
               setFormList={setFormList}
               data={data}
               itemState={itemState}
-              checkBoxSetter={this.checkBoxSetter}
             />
           })}
         </div>
@@ -48,6 +48,23 @@ class RadioComponents extends Component {
       </div>
     );
   }
+};
+
+RadioComponents.defaultProps = {
+  setFormList: () => { },
+  itemState: '',
+  data: {},
+  isClear: false,
+  unfilledFelds: []
+
+};
+
+RadioComponents.propTypes = {
+  setFormList: PropTypes.func,
+  itemState: PropTypes.string,
+  data: PropTypes.object,
+  isClear: PropTypes.bool,
+  unfilledFelds: PropTypes.array
 };
 
 export default RadioComponents;

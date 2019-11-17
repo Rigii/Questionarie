@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import CheckComp from './check_comp'
+import PropTypes from 'prop-types'
 
 class CheckBoxComp extends Component {
   constructor(){
@@ -59,6 +60,22 @@ class CheckBoxComp extends Component {
     </div>
   );
 }
+};
+
+CheckBoxComp.defaultProps = {
+  setFormList: () => { },
+  itemState: [],
+  unfilledFelds: [],
+  data: {},
+  isClear: false,
+};
+
+CheckBoxComp.propTypes = {
+  setFormList: PropTypes.func,
+  itemState: PropTypes.array,
+  unfilledFelds: PropTypes.array,
+  data: PropTypes.object,
+  isClear: PropTypes.bool
 };
 
 export default CheckBoxComp;
