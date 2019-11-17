@@ -320,8 +320,7 @@ h2 {
 }
 
 .test_div {
- /*  max-width: 1025px; */
-  max-width: 100%;
+  max-width: 1025px;
   margin-right: auto;
   margin-left: auto;
   padding: 10px;
@@ -343,14 +342,14 @@ h2 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .radio_cont {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .input-title {
@@ -359,7 +358,8 @@ h2 {
 }
 
 .form-check, .form-radio {
-  min-width: 30%;
+  min-width: 33%;
+  margin: 0.1%;
 }
 
 .button_post_panell {
@@ -387,7 +387,7 @@ h2 {
 
 @media screen and (max-width: 480px) {
   .form-check, .form-radio {
-    min-width: 50%;
+    min-width: 49%;
   }
 
   .checkbox_cont {
@@ -397,6 +397,6 @@ h2 {
 
 @media screen and (max-width: 980px) {
   .form-check {
-    min-width: 50%;
+    min-width: 49%;
   }
 }
