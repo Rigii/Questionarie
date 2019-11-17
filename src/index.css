@@ -320,19 +320,17 @@ h2 {
 }
 
 .test_div {
-  max-width: 1025px;
+ /*  max-width: 1025px; */
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding: 10px;
 }
 
 .artist_name {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.test_questions {
-  width: 100%;
 }
 
 .test_body {
