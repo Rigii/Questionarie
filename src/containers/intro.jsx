@@ -8,7 +8,7 @@ function Intro(props) {
   return (
     !props.startTest ?
       <div className='intro'>
-          <h2>Metal Goads</h2>
+          <h2>Metal Gods</h2>
           <button
           type='button'
           className='button start_button'
