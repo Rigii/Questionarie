@@ -12,7 +12,7 @@ function AnsverPage(props) {
     let { correctAnsvers, stopTest, stateData, restartStartTest } = props
     if (stopTest) {
     window.onbeforeunload = function () {
-        localStorage.removeItem('metalGoads')
+        localStorage.removeItem('metalGods')
         return ''
     }
     }

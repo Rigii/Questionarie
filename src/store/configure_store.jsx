@@ -5,12 +5,12 @@ import { rootReducer } from '../reducers/index.jsx'
 import thunk from 'redux-thunk'
 import logger from 'redux-logger'
 
-const persistedState = localStorage.getItem('metalGoads') ? JSON.parse(localStorage.getItem('metalGoads')) : {}
+const persistedState = localStorage.getItem('metalGods') ? JSON.parse(localStorage.getItem('metalGods')) : {}
 
 export const store = createStore(rootReducer,
     persistedState, 
     composeWithDevTools(applyMiddleware(thunk, logger)));
 
 store.subscribe(()=>{
-    localStorage.setItem('metalGoads', JSON.stringify(store.getState()))
+    localStorage.setItem('metalGods', JSON.stringify(store.getState()))
   })
