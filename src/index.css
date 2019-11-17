@@ -196,7 +196,7 @@ Customize the label (the container) */
 /* Hide the browser's default radio button */
 
 .container_radio input {
-  position: absolute;
+  /* position: absolute; */
   opacity: 0;
   cursor: pointer;
 }
