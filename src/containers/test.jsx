@@ -18,7 +18,7 @@ class Test extends Component {
     
     return (
             formState.startTest && !formState.stopTest ?
-            <div className='test_questions'>
+            <div className='test_questions test_div'>
                 <h2>Just select this hell deam name!</h2>
             <hr className="dividing-line"></hr>
                 <ArtistNameSelect

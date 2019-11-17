@@ -1,4 +1,7 @@
-body {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -288,12 +291,8 @@ Customize the label (the container) */
 
 /*general styles*/
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .intro {
+  position: absolute;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -302,10 +301,11 @@ Customize the label (the container) */
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: -webkit-fill-available;
-  height: -moz-available;
+  height: -webkit-fill-available !important;
+  height: 100%;
   height: stretch;
   align-content: center;
+  min-height: -moz-available;
 }
 
 h2 {
@@ -315,7 +315,14 @@ h2 {
 }
 
 #app_div {
-  padding: 10px;
+  max-width: 100%;
+/*   overflow-x: hidden;  */
+}
+
+.test_div {
+  max-width: 1025px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .artist_name {

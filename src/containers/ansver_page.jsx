@@ -17,7 +17,7 @@ function AnsverPage(props) {
 
     return (
         stopTest && correctAnsvers.length > 0 ?
-            <div id='ansver_page'>
+            <div id='ansver_page' className='test_div'>
                 <h2>Test Results</h2>
                 <hr className="dividing-line"></hr>
                 <AnsverResults
