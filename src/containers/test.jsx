@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import TestBody from '../components/test_components/test_body'
 import ArtistNameSelect from '../components/test_components/artist_name'
 import ButtonsPanell from '../components/test_components/buttons_panell'
@@ -20,7 +20,7 @@ class Test extends Component {
         return (
             formState.startTest && !formState.stopTest ?
                 <div className='test_questions test_div'>
-                    <h2>Just select this hell deam name!</h2>
+                    <h2>Select name</h2>
                     <hr className="dividing-line"></hr>
                     <ArtistNameSelect
                         getInitialData={getInitialData}
