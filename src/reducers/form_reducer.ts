@@ -11,8 +11,9 @@ import {
   SET_GENERAL_STATE,
   SET_UNFILLED_FELDS
 } from '../actions/form_actions'
+import { InitialStateTypes } from './reducerTypes'
 
-export const initialState = {
+export const initialState: InitialStateTypes = {
   urlName: '',
   startTest: false,
   stopTest: false,
@@ -24,7 +25,7 @@ export const initialState = {
   isFetching: false
 };
 
-export function formState(state = initialState, action) {
+export function formState(state = initialState, action: any) {
   let payload = action.payload;
   switch (action.type) {
     case SET_GENERAL_STATE: return payload

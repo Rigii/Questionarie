@@ -62,17 +62,13 @@ class Select extends Component {
   isFormALert(target) {
     if (this.props.shouldValidate) {
       let shouldCheck = this.props.isPost || this.state.isBlur;
-      if (target === 'class') {
-        return (shouldCheck && this.props.value === null) ||
-          (shouldCheck && this.props.value === '0') ||
-          (shouldCheck && this.props.value === '') ||
-          (shouldCheck && this.props.multi && this.props.value.length === 0)
+      if (target === 'class' && shouldCheck ) {
+        return (this.props.value.length === 0 || this.props.value.split('').length === 0)
           ? 'form-alert'
           : null;
       }
-      if (target === 'message') {
-        return (shouldCheck === true && this.props.value === null) ||
-          (shouldCheck === true && this.props.value === '0') ? (
+      if (target === 'message' && shouldCheck) {
+        return (this.props.value === null || this.props.value === '0') ? (
             <small className='validate-mess'>
               <b>Обязательное поле</b>
             </small>
